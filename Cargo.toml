@@ -52,7 +52,8 @@ serde_json = "1"
 # tokio
 tokio = "1"
 tokio-stream = '0'
-tokio-rustls  = "0"
+# 版本较老，待更新，新版本依赖得rustls有相应得更新，编译较麻烦
+tokio-rustls  = "0.24"
 #  "tracing"
 toml = "0"
 # tracing
@@ -70,8 +71,8 @@ user-agent-parser = "0.3"
 #  随机数
 md5 = "0"
 rand = "0"
-# 系统信息
-sysinfo = "0"
+# 系统信息, 新版本接口有变化编译不过
+sysinfo = "0.29"
 # 验证码
 captcha_rust = "0"
 # skyTable  可选依赖
